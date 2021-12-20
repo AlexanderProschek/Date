@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Webiste</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+
+    <div class="middle">
+        <button onclick="window.location.href='/';">Back</button>
+
+        <h1>Date Form</h1>
+        <p>Please fill out this date request form:</p>
+
+        <form action="dates" method="post">
+            <label for="dates">Name:</label>
+            <input type="text" name="name" id="name" value="Riya" readonly required>
+
+            <br>
+            <label for="dateType">Type of date:</label>
+            <div><input type="radio" id="dateType" name="dateType" value="casual" required>Casual</div>
+            <div><input type="radio" id="dateType" name="dateType" value="fancy" required>Fancy</div>
+            <div><input type="radio" id="dateType" name="dateType" value="picnic" required>Picnic</div>
+            <div><input type="radio" id="dateType" name="dateType" value="weird" required>Weird?</div>
+            
+            <br>
+            <label for="date">When:</label>
+            <input type="date" name="when" id="when" required>
+
+            <br>
+            <label for="notes">Notes:</label>
+            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+            
+            <br>
+            <input type="submit" value="Gimme date!">
+        </form>
+    </div>
+</body>
+</html>
