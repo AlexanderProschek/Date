@@ -4,5 +4,10 @@ services:
   app:
     build: .
     ports:
-      - 8080:8080
+      - 7920:8080
     restart: unless-stopped
+    volumes:
+      - dates:/save
+
+volumes:
+  dates:
